@@ -10,7 +10,6 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://www3.sympatico.ca/sarrazip/dev/sagasu.html
 License:	GPL
 Group:		Text tools
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	libgnomeui2-devel bison
 BuildRequires:	ImageMagick desktop-file-utils
 
