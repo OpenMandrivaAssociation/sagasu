@@ -33,16 +33,6 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{_bindir}/%{name}" \
-icon="%{name}.png" \
-needs="x11" \
-title="Sagasu text search tool" \
-longtitle="Search strings in multiple files" \
-section="More applications/Development/Tools" \
-xdg="true"
-EOF
 
 desktop-file-install --vendor="" \
   --remove-category="Application" \
@@ -80,7 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 %{_datadir}/sounds/%{name}
 %{_mandir}/man?/*
-%{_menudir}/%{name}
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
