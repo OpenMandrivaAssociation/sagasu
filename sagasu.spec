@@ -55,11 +55,15 @@ convert -geometry 16x16 src/images/sagasu.png $RPM_BUILD_ROOT%{_miconsdir}/%{nam
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 		
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %files -f %{name}.lang
 %defattr(-,root,root)
