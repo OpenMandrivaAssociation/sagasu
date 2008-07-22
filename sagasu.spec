@@ -1,5 +1,5 @@
 %define version	2.0.8
-%define release %mkrel 2
+%define release %mkrel 4
 
 Name: 	 	sagasu
 Summary: 	GNOME text searching tool
