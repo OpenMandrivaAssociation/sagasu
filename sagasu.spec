@@ -12,7 +12,7 @@ License:	GPL
 Group:		Text tools
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	libgnomeui2-devel bison
-BuildRequires:	ImageMagick desktop-file-utils
+BuildRequires:	imagemagick desktop-file-utils
 
 %description
 Sagasu is a GNOME tool to find strings in multiple files. The user specifies
