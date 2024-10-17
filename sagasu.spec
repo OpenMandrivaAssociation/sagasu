@@ -7,7 +7,7 @@ Version: 	%{version}
 Release: 	%{release}
 # http://www3.sympatico.ca/sarrazip/dev/sagasu-%{version}.tar.gz
 Source:		%{name}-%{version}.tar.bz2
-URL:		http://www3.sympatico.ca/sarrazip/dev/sagasu.html
+URL:		https://www3.sympatico.ca/sarrazip/dev/sagasu.html
 License:	GPL
 Group:		Text tools
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
