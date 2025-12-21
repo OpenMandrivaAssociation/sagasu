@@ -11,6 +11,11 @@ URL:		https://www3.sympatico.ca/sarrazip/dev/sagasu.html
 License:	GPL
 Group:		Text tools
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libgnomeui2-devel bison
 BuildRequires:	imagemagick desktop-file-utils
 
